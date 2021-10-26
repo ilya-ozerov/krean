@@ -1,2 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap");
+
+@font-face {
+    font-family: "Uni Neue";
+    src: local("Uni Neue Black"), local("Uni-Neue-Black"), url("assets/fonts/UniNeueBlack.woff2") format("woff2"),
+        url("assets/fonts/UniNeueBlack.woff") format("woff"), url("assets/fonts/UniNeueBlack.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Uni Neue";
+    src: local("Uni Neue Heavy"), local("Uni-Neue-Heavy"), url("assets/fonts/UniNeueHeavy.woff2") format("woff2"),
+        url("assets/fonts/UniNeueHeavy.woff") format("woff"), url("assets/fonts/UniNeueHeavy.ttf") format("truetype");
+    font-weight: 850;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Uni Neue";
+    src: local("Uni Neue Book"), local("Uni-Neue-Book"), url("assets/fonts/UniNeueBook.woff2") format("woff2"),
+        url("assets/fonts/UniNeueBook.woff") format("woff"), url("assets/fonts/UniNeueBook.ttf") format("truetype");
+    font-weight: 350;
+    font-style: normal;
+}
+
+@import "reset";
+
 .wrapper {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.logo {
+    font-size: 47px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: "Uni Neue";
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    h2 {
+        font-size: 30px;
+        font-weight: 500;
+        color: #787878;
+        padding-bottom: 18px;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 3px;
+        bottom: 0;
+        left: calc(50% - 25px);
+        background-color: #4a4a4a;
+    }
 }
