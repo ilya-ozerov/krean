@@ -1,42 +1,12 @@
 import React from 'react';
 import './App.scss';
+import { Home } from './components/Home/Home';
 
 export const App = () => {
   return (
     <div className="wrapper">
 
-      <section className="home">
-
-        <div className="home__content">
-          <header className="home__header header">
-            <div className="header__logo logo">
-              <img src="#" alt="krean logo" />
-            </div>
-            <ul className="header__list">
-              <li>Services</li>
-              <li>Works</li>
-              <li>References</li>
-              <li>Contact</li>
-            </ul>
-          </header>
-
-          <div className="home__title">
-
-            <h1>Digital Marketing</h1>
-
-            <div className="home__subtitle">
-              <h2>Consultancy</h2>
-            </div>
-
-          </div>
-
-          <div className="home__mouse">
-            <img src="#" alt="computer mouse" />
-          </div>
-
-        </div>
-
-      </section>
+      <Home />
 
       <section className="services">
         <div className="services__content">
