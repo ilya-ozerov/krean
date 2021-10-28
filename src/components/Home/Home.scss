@@ -6,6 +6,7 @@
         position: relative;
         color: #ffff;
         min-height: 100vh;
+        //padding: 50px;
     }
     &__bg {
         position: absolute;
@@ -23,7 +24,6 @@
         align-items: center;
         justify-content: center;
         min-height: 100vh;
-
         padding: 50px;
     }
 
@@ -67,7 +67,6 @@
 
     &__logo {
         flex: 1 1 50%;
-        //text-align: center;
     }
     &__list {
         flex: 1 1 50%;
