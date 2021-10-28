@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.scss';
 import { Home } from './components/Home/Home';
+import { Services } from './components/Services/Services';
 
 export const App = () => {
   return (
@@ -8,52 +9,7 @@ export const App = () => {
 
       <Home />
 
-      <section className="services">
-        <div className="services__content">
-          <div className="services__logo">
-            KREA.
-          </div>
-
-          <div className="services__title title">
-            <h2>Services</h2>
-          </div>
-
-          <div className="services__columns">
-
-            <div className="services__column column">
-              <div className="column__image">
-                <img src="#" alt="column" />
-              </div>
-              <div className="column__title">Consultancy</div>
-              <div className="column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget elementum nisi. Curabitur cursus, dolor ac tempus pulvinar, risus risus elementum eros, vehicula ultricies quam arcu at augue. Donec lacinia erat nec tincidunt dignissim. Etiam egestas euismod ipsum, vitae commodo neque lacinia ac
-              </div>
-            </div>
-
-            <div className="services__column column">
-              <div className="column__image">
-                <img src="#" alt="column" />
-              </div>
-              <div className="column__title">Mentorship</div>
-              <div className="column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget elementum nisi. Curabitur cursus, dolor ac tempus pulvinar, risus risus elementum eros, vehicula ultricies quam arcu at augue. Donec lacinia erat nec tincidunt dignissim. Etiam egestas euismod ipsum, vitae commodo neque lacinia ac
-              </div>
-            </div>
-
-            <div className="services__column column">
-              <div className="column__image">
-                <img src="#" alt="column" />
-              </div>
-              <div className="column__title">Incubatory</div>
-              <div className="column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget elementum nisi. Curabitur cursus, dolor ac tempus pulvinar, risus risus elementum eros, vehicula ultricies quam arcu at augue. Donec lacinia erat nec tincidunt dignissim. Etiam egestas euismod ipsum, vitae commodo neque lacinia ac
-              </div>
-            </div>
-
-          </div>
-
-          <div className="services__button">
-            <button>GET IN TOUCH</button>
-          </div>
-        </div>
-      </section>
+      <Services />
 
       <section className="works">
         <div className="works__title title">
