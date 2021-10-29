@@ -1,30 +1,32 @@
 .comments {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
     align-items: center;
     justify-content: center;
-
-    margin: 0px -40px;
+    gap: 50px;
 
     &__prev {
-        padding: 0px 40px;
+        display: grid;
+        align-items: center;
+        justify-items: center;
     }
     &__next {
-        padding: 0px 40px;
+        display: grid;
+        align-items: center;
+        justify-items: center;
     }
 
     &__items {
-        padding: 0px 40px;
     }
 
     &__item {
-        display: flex;
-        margin: 0px -30px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 60px;
     }
     &__image {
-        padding: 0px 30px;
     }
     &__body {
-        padding: 0px 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -52,7 +54,7 @@
     &__bg {
         position: absolute;
         bottom: -40px;
-        left: 0;
+        left: -30px;
         img {
             opacity: 0.4;
         }
