@@ -15,7 +15,7 @@ export const App = () => {
 
       <Services />
 
-      {/* <Works /> */}
+      <Works />
 
       <References />
 
