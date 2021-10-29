@@ -1,0 +1,64 @@
+.footer {
+    height: 200px;
+    background: linear-gradient(to right, #32377a, #452851);
+    display: grid;
+    align-items: center;
+    &__content {
+        //width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+
+        color: #ffffff;
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 120%;
+    }
+
+    // first column
+    &__logo {
+    }
+
+    // second column
+    &__address {
+    }
+
+    // third column
+    &__contacts {
+    }
+    &__email {
+        margin-bottom: 10px;
+        padding-left: 40px;
+        background: url("./../../assets/images/footer/email.svg") left center no-repeat;
+    }
+    &__number {
+        padding-left: 40px;
+        background: url("./../../assets/images/footer/phone.svg") left center no-repeat;
+    }
+
+    // fourth column
+    &__socials {
+    }
+    &__networks {
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        justify-items: center;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+    &__network {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+        }
+    }
+    &__copyright {
+        text-align: right;
+        font-size: 12px;
+    }
+}
