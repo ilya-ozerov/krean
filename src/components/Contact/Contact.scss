@@ -1,0 +1,77 @@
+.contact {
+    &__content {
+        min-height: 70vh;
+        background-color: #000000;
+        display: grid;
+        grid-template-rows: 25% 50% 25%;
+
+        align-items: center;
+        justify-items: center;
+    }
+
+    &__title {
+        flex: 0 0 20%;
+        h2 {
+            color: #ffffff;
+            &::after {
+                content: none;
+            }
+        }
+    }
+
+    &__form {
+        flex: 0 0 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 40px;
+
+        grid-template-areas:
+            "name email"
+            "message message";
+    }
+
+    &__name {
+        grid-area: name;
+    }
+    &__email {
+        grid-area: email;
+    }
+    &__message {
+        grid-area: message;
+        textarea {
+            padding: 20px;
+            resize: none;
+        }
+    }
+
+    &__button {
+        flex: 0 0 20%;
+        button {
+            font-family: "Uni Neue";
+            width: 240px;
+            height: 90px;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 29px;
+            text-transform: uppercase;
+            background-color: #202020;
+        }
+    }
+}
+
+.form-element {
+    font-size: 20px;
+    width: 100%;
+    padding: 30px;
+    color: #b2b2b2;
+
+    background-color: rgba($color: #000000, $alpha: 0);
+
+    border-bottom: 3px solid #c6c6c6;
+
+    &::placeholder {
+        color: #b2b2b2;
+        font-size: 20px;
+    }
+}

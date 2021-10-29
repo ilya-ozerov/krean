@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.scss';
+import { Contact } from './components/Contact/Contact';
 import { Home } from './components/Home/Home';
 import { References } from './components/References/References';
 import { Services } from './components/Services/Services';
@@ -17,25 +18,7 @@ export const App = () => {
 
       <References />
 
-      <section className="contact">
-        <div className="contact__content">
-          <div className="contact__form">
-            <div className="contact__name">
-              <input type="text" placeholder="Full Name" />
-            </div>
-            <div className="contact__email">
-              <input type="text" placeholder="Email" />
-            </div>
-            <div className="contact__message">
-              <textarea placeholder="Message" />
-            </div>
-            <div className="contact__button">
-              <button>Send</button>
-            </div>
-          </div>
-        </div>
-
-      </section>
+      <Contact />
 
       <footer className="footer">
         <div className="footer__content">
