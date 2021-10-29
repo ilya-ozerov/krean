@@ -24,6 +24,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Uni Neue";
+    src: local("Uni Neue Bold"), local("Uni-Neue-Bold"), url("assets/fonts/UniNeueBold.woff2") format("woff2"),
+        url("assets/fonts/UniNeueBold.woff") format("woff"), url("assets/fonts/UniNeueBold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
 @import "reset";
 
 .wrapper {
@@ -40,22 +48,22 @@
 }
 
 .title {
-    position: relative;
     text-align: center;
     h2 {
         font-size: 30px;
         font-weight: 500;
         color: #787878;
         padding-bottom: 18px;
-    }
+        position: relative;
 
-    &:after {
-        content: "";
-        position: absolute;
-        width: 50px;
-        height: 3px;
-        bottom: 0;
-        left: calc(50% - 25px);
-        background-color: #4a4a4a;
+        &:after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            bottom: 0;
+            left: calc(50% - 25px);
+            background-color: #4a4a4a;
+        }
     }
 }
