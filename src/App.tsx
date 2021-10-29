@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.scss';
 import { Home } from './components/Home/Home';
+import { References } from './components/References/References';
 import { Services } from './components/Services/Services';
+import { Works } from './components/Works/Works';
 
 export const App = () => {
   return (
@@ -11,152 +13,9 @@ export const App = () => {
 
       <Services />
 
-      <section className="works">
-        <div className="works__title title">
-          <h2>Works</h2>
-        </div>
+      {/* <Works /> */}
 
-        <div className="works__items">
-
-          <div className="works__item">
-            <img src="#" alt="work item" />
-          </div>
-
-          <div className="works__item">
-            <img src="#" alt="work item" />
-          </div>
-
-          <div className="works__item">
-            <img src="#" alt="work item" />
-          </div>
-
-          <div className="works__item">
-            <img src="#" alt="work item" />
-          </div>
-
-          <div className="works__item">
-            <img src="#" alt="work item" />
-          </div>
-
-          <div className="works__item">
-            <img src="#" alt="work item" />
-          </div>
-
-          <div className="works__item">
-            <img src="#" alt="work item" />
-          </div>
-
-        </div>
-
-
-      </section>
-
-      <section className="references">
-
-        <div className="references__content">
-          <div className="references__title">
-            <h2>References</h2>
-          </div>
-
-          <div className="references__comments comments">
-
-            <div className="comments__item">
-              <div className="comments__image">
-                <img src="#" alt="author" />
-              </div>
-              <div className="comments__body">
-                <div className="comments__name">John Doe</div>
-                <div className="comments__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget elementum nisi. Curabitur cursus, dolor ac tempus pulvinar, risus risus elementum eros, vehicula ultricies quam arcu at augue. Donec lacinia erat nec tincidunt dignissim. Etiam egestas euismod ipsum, vitae commodo neque lacinia ac
-                </div>
-              </div>
-            </div>
-
-            <div className="comments__item">
-              <div className="comments__image">
-                <img src="#" alt="author" />
-              </div>
-              <div className="comments__body">
-                <div className="comments__name">John Doe</div>
-                <div className="comments__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget elementum nisi. Curabitur cursus, dolor ac tempus pulvinar, risus risus elementum eros, vehicula ultricies quam arcu at augue. Donec lacinia erat nec tincidunt dignissim. Etiam egestas euismod ipsum, vitae commodo neque lacinia ac
-                </div>
-              </div>
-            </div>
-
-            <div className="comments__item">
-              <div className="comments__image">
-                <img src="#" alt="author" />
-              </div>
-              <div className="comments__body">
-                <div className="comments__name">John Doe</div>
-                <div className="comments__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget elementum nisi. Curabitur cursus, dolor ac tempus pulvinar, risus risus elementum eros, vehicula ultricies quam arcu at augue. Donec lacinia erat nec tincidunt dignissim. Etiam egestas euismod ipsum, vitae commodo neque lacinia ac
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div className="references__partners partners">
-
-            <div className="partners__item">
-              <div className="partners__image">
-                <img src="#" alt="patner" />
-              </div>
-            </div>
-
-            <div className="partners__item">
-              <div className="partners__image">
-                <img src="#" alt="patner" />
-              </div>
-            </div>
-
-            <div className="partners__item">
-              <div className="partners__image">
-                <img src="#" alt="patner" />
-              </div>
-            </div>
-
-            <div className="partners__item">
-              <div className="partners__image">
-                <img src="#" alt="patner" />
-              </div>
-            </div>
-
-            <div className="partners__item">
-              <div className="partners__image">
-                <img src="#" alt="patner" />
-              </div>
-            </div>
-
-            <div className="partners__item">
-              <div className="partners__image">
-                <img src="#" alt="patner" />
-              </div>
-            </div>
-
-            <div className="partners__item">
-              <div className="partners__image">
-                <img src="#" alt="patner" />
-              </div>
-            </div>
-
-            <div className="partners__item">
-              <div className="partners__image">
-                <img src="#" alt="patner" />
-              </div>
-            </div>
-
-            <div className="partners__item">
-              <div className="partners__image">
-                <img src="#" alt="patner" />
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </section>
+      <References />
 
       <section className="contact">
         <div className="contact__content">

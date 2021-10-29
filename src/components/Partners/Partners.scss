@@ -1,0 +1,17 @@
+.partners {
+    //background-color: rgb(211, 170, 170);
+
+    width: 100%;
+
+    display: grid;
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+
+    grid-template-columns: repeat(auto-fit, 200px);
+
+    &__item {
+    }
+    &__image {
+    }
+}
