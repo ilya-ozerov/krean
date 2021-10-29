@@ -1,11 +1,11 @@
 .home {
-    min-height: 100vh;
-    overflow: hidden;
-
     &__content {
         position: relative;
         color: #ffff;
         min-height: 100vh;
+        display: grid;
+        align-items: center;
+        justify-items: center;
     }
     &__bg {
         position: absolute;
@@ -18,12 +18,15 @@
         object-fit: cover;
     }
     &__body {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: 200px 1fr 150px;
+        grid-template-columns: 1fr;
         align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        padding: 50px;
+        justify-items: center;
+
+        height: 100%;
+        width: 100%;
+        //padding: 50px;
     }
 
     &__header {
