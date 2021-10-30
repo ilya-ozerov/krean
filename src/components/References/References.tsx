@@ -2,8 +2,8 @@ import React from 'react';
 import './References.scss';
 
 import men21 from "./../../assets/images/services/men.svg";
-import { Comments } from '../Comments/Comments';
-import { Partners } from '../Partners/Partners';
+import { Comments } from './Comments/Comments';
+import { Partners } from './Partners/Partners';
 
 export const References = () => {
   return (

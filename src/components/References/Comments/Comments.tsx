@@ -1,10 +1,10 @@
 import React from 'react';
 import './Comments.scss';
-import userAvatar from "./../../assets/images/references/placeholder.png";
-import bg from "./../../assets/images/references/bg.svg";
+import userAvatar from "./../../../assets/images/references/placeholder.png";
+import bg from "./../../../assets/images/references/bg.svg";
 
-import next from "./../../assets/images/references/next.svg";
-import prev from "./../../assets/images/references/prev.svg";
+import next from "./../../../assets/images/references/next.svg";
+import prev from "./../../../assets/images/references/prev.svg";
 
 type CommentsType = {
   className: string;

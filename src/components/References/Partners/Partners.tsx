@@ -1,13 +1,13 @@
 import React from 'react';
 import './Partners.scss';
 
-import partner_1 from "./../../assets/images/references/partners/partner_1.jpeg";
-import partner_2 from "./../../assets/images/references/partners/partner_2.jpeg";
-import partner_3 from "./../../assets/images/references/partners/partner_3.jpeg";
-import partner_4 from "./../../assets/images/references/partners/partner_4.jpeg";
-import partner_5 from "./../../assets/images/references/partners/partner_5.jpeg";
-import partner_6 from "./../../assets/images/references/partners/partner_6.jpeg";
-import { PartnersLogoType } from '../../types/types';
+import partner_1 from "./../../../assets/images/references/partners/partner_1.jpeg";
+import partner_2 from "./../../../assets/images/references/partners/partner_2.jpeg";
+import partner_3 from "./../../../assets/images/references/partners/partner_3.jpeg";
+import partner_4 from "./../../../assets/images/references/partners/partner_4.jpeg";
+import partner_5 from "./../../../assets/images/references/partners/partner_5.jpeg";
+import partner_6 from "./../../../assets/images/references/partners/partner_6.jpeg";
+import { PartnersLogoType } from '../../../types/types';
 
 type PartnersType = {
   className: string;
