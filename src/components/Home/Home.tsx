@@ -3,6 +3,7 @@ import './Home.scss';
 
 import bg from "./../../assets/images/home/bg.png"
 import mouse from "./../../assets/images/home/mouse.svg"
+import { Header } from '../Header/Header';
 
 export const Home = () => {
   return (
@@ -14,17 +15,9 @@ export const Home = () => {
 
 
         <div className="home__body">
-          <header className="home__header header">
-            <div className="header__logo logo">
-              krea.
-            </div>
-            <ul className="header__list">
-              <li>Services</li>
-              <li>Works</li>
-              <li>References</li>
-              <li>Contact</li>
-            </ul>
-          </header>
+
+          <Header className="home__header" />
+
           <div className="home__title">
             <h1>Digital Marketing</h1>
             <div className="home__subtitle">

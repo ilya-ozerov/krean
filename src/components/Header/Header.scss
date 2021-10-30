@@ -1,0 +1,32 @@
+.header {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__logo {
+        flex: 1 1 50%;
+    }
+    &__list {
+        flex: 1 1 50%;
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin-right: 50px;
+            font-size: 25px;
+            font-weight: 700;
+
+            user-select: none;
+            cursor: pointer;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
+}
