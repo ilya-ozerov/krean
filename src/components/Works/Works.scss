@@ -8,6 +8,10 @@
         grid-template-areas: "title" "gallery";
 
         background-color: #ebebeb;
+
+        @media (max-width: 767px) {
+            grid-template-rows: 100px 1fr;
+        }
     }
     &__title {
         grid-area: title;
@@ -20,11 +24,21 @@
     grid-area: gallery;
     padding: 0px 0px 150px 0px;
 
+    @media (max-width: 767px) {
+        width: 100%;
+        padding: 10px;
+    }
+
     &__items {
         display: grid;
         gap: 30px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+
+        @media (max-width: 767px) {
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
     }
     &__item {
         position: relative;

@@ -45,12 +45,24 @@
             margin-bottom: 10px;
             font-weight: 700;
         }
+
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 50px;
+            }
+        }
     }
 
     &__subtitle {
         h2 {
             font-size: 40px;
             font-weight: 300;
+        }
+
+        @media (max-width: 767px) {
+            h2 {
+                font-size: 25px;
+            }
         }
     }
 

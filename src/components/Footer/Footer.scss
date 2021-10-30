@@ -1,11 +1,12 @@
 .footer {
-    height: 200px;
+    min-height: 200px;
     background: linear-gradient(to right, #32377a, #452851);
     display: grid;
     align-items: center;
     &__content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "logo info address socials";
         align-items: center;
         justify-items: center;
 
@@ -13,18 +14,36 @@
         font-size: 19px;
         font-weight: 500;
         line-height: 120%;
+
+        @media (max-width: 1024px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+
+            grid-template-areas:
+                "logo"
+                "info"
+                "address"
+                "socials";
+
+            text-align: center;
+
+            gap: 20px;
+        }
     }
 
     // first column
     &__logo {
+        grid-area: logo;
     }
 
     // second column
     &__address {
+        grid-area: address;
     }
 
     // third column
     &__contacts {
+        grid-area: info;
     }
     &__email {
         margin-bottom: 10px;
@@ -38,6 +57,7 @@
 
     // fourth column
     &__socials {
+        grid-area: socials;
     }
     &__networks {
         display: grid;
