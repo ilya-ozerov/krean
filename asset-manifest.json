@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/krean/static/css/main.c4fdedfa.chunk.css",
+    "main.js": "/krean/static/js/main.4f22d7d2.chunk.js",
+    "main.js.map": "/krean/static/js/main.4f22d7d2.chunk.js.map",
+    "runtime-main.js": "/krean/static/js/runtime-main.5a8204b7.js",
+    "runtime-main.js.map": "/krean/static/js/runtime-main.5a8204b7.js.map",
+    "static/js/2.db4c4470.chunk.js": "/krean/static/js/2.db4c4470.chunk.js",
+    "static/js/2.db4c4470.chunk.js.map": "/krean/static/js/2.db4c4470.chunk.js.map",
+    "static/js/3.4c098d55.chunk.js": "/krean/static/js/3.4c098d55.chunk.js",
+    "static/js/3.4c098d55.chunk.js.map": "/krean/static/js/3.4c098d55.chunk.js.map",
+    "index.html": "/krean/index.html",
+    "static/css/main.c4fdedfa.chunk.css.map": "/krean/static/css/main.c4fdedfa.chunk.css.map",
+    "static/js/2.db4c4470.chunk.js.LICENSE.txt": "/krean/static/js/2.db4c4470.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/krean/static/media/UniNeueHeavy.d61a3300.ttf",
+    "static/media/bg.696169dd.png": "/krean/static/media/bg.696169dd.png",
+    "static/media/bg.fdc21e07.svg": "/krean/static/media/bg.fdc21e07.svg",
+    "static/media/compass.993a6cca.svg": "/krean/static/media/compass.993a6cca.svg",
+    "static/media/egg.c6b5d429.svg": "/krean/static/media/egg.c6b5d429.svg",
+    "static/media/Footer.scss": "/krean/static/media/phone.b55bb98b.svg",
+    "static/media/facebook.1abff280.svg": "/krean/static/media/facebook.1abff280.svg",
+    "static/media/google.48b33769.svg": "/krean/static/media/google.48b33769.svg",
+    "static/media/linkedin.0b7d6718.svg": "/krean/static/media/linkedin.0b7d6718.svg",
+    "static/media/men.5b5d4d97.svg": "/krean/static/media/men.5b5d4d97.svg",
+    "static/media/mouse.1dd15192.svg": "/krean/static/media/mouse.1dd15192.svg",
+    "static/media/next.d891e5d3.svg": "/krean/static/media/next.d891e5d3.svg",
+    "static/media/prev.57615bd3.svg": "/krean/static/media/prev.57615bd3.svg",
+    "static/media/twitter.fea09356.svg": "/krean/static/media/twitter.fea09356.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5a8204b7.js",
+    "static/js/2.db4c4470.chunk.js",
+    "static/css/main.c4fdedfa.chunk.css",
+    "static/js/main.4f22d7d2.chunk.js"
+  ]
+}
