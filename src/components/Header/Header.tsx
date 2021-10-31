@@ -34,21 +34,21 @@ export const Header: React.FC<HeaderProps> = ({ className }) => {
     }
   }, [isSticky])
 
-
-
   return (
-    <header className={`${className} header`}>
-      <div className="header__logo logo">
-        krea.
-      </div>
-      <ul className="header__list">
-        <li>Services</li>
-        <li>Works</li>
-        <li>References</li>
-        <li>Contact</li>
-      </ul>
+    <header className={isSticky ? `${className} header sticky-header` : `${className} header`}>
+      <div className="header__body">
+        <div className="header__logo logo">
+          krea.
+        </div>
+        <ul className="header__list">
+          <li>Services</li>
+          <li>Works</li>
+          <li>References</li>
+          <li>Contact</li>
+        </ul>
 
-      <MobileMenu className="header__mobile-menu" />
+        <MobileMenu className="header__mobile-menu" />
+      </div>
 
     </header>
   );
