@@ -1,11 +1,41 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Header.scss';
+import { MobileMenu } from './MobileMenu/MobileMenu';
 
 type HeaderProps = {
   className: string;
 }
 
 export const Header: React.FC<HeaderProps> = ({ className }) => {
+
+  const [isSticky, setIsSticky] = useState(false);
+
+  const scrollHandler = () => {
+    if (window.scrollY >= 50) {
+      setIsSticky(true)
+    } else {
+      setIsSticky(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHandler);
+
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    }
+  }, [])
+
+  useEffect(() => {
+    if (isSticky) {
+      console.log("IS STICKY!")
+    } else {
+      console.log("IS NOT STICKY!")
+    }
+  }, [isSticky])
+
+
+
   return (
     <header className={`${className} header`}>
       <div className="header__logo logo">
@@ -17,6 +47,9 @@ export const Header: React.FC<HeaderProps> = ({ className }) => {
         <li>References</li>
         <li>Contact</li>
       </ul>
+
+      <MobileMenu className="header__mobile-menu" />
+
     </header>
   );
 }

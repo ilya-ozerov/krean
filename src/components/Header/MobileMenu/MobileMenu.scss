@@ -1,0 +1,79 @@
+.mobile-menu {
+    &__burger {
+        padding: 7px 15px;
+
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template: repeat(3, 7px) / 1fr;
+
+        border: 1px solid rgba(255, 255, 255, 0.1);
+
+        user-select: none;
+        cursor: pointer;
+        border-radius: 5px;
+
+        &::before {
+            content: " ";
+            height: 2px;
+            width: 22px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        div {
+            height: 2px;
+            width: 22px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        &::after {
+            content: " ";
+            height: 2px;
+            width: 22px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    &__body {
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 60px;
+
+        background-color: #202020;
+
+        padding: 15px 20px;
+    }
+    &__list {
+        margin-bottom: 30px;
+        li {
+            user-select: none;
+            cursor: pointer;
+            font-size: 20px;
+            line-height: 150%;
+            font-weight: 700;
+            padding: 8px 0px 23px 0px;
+
+            border-bottom: 2px solid #ffffff;
+
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__networks {
+        display: flex;
+        align-items: center;
+        padding: 10px 0px;
+    }
+    &__network {
+        user-select: none;
+        cursor: pointer;
+        margin-right: 25px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

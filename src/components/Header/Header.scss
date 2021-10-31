@@ -1,14 +1,23 @@
 .header {
     width: 80%;
-    display: flex;
-    justify-content: center;
+    display: grid;
     align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    position: relative;
+
+    padding: 0px 10px;
+
+    @media (max-width: 767px) {
+        width: 100%;
+    }
 
     &__logo {
-        flex: 1 1 50%;
+        justify-self: start;
     }
     &__list {
-        flex: 1 1 50%;
         display: flex;
         justify-content: center;
 
@@ -27,6 +36,14 @@
 
         @media (max-width: 1024px) {
             display: none;
+        }
+    }
+
+    &__mobile-menu {
+        display: none;
+        @media (max-width: 1024px) {
+            display: block;
+            justify-self: end;
         }
     }
 }
