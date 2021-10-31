@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/krean/static/css/main.c4fdedfa.chunk.css",
-    "main.js": "/krean/static/js/main.4f22d7d2.chunk.js",
-    "main.js.map": "/krean/static/js/main.4f22d7d2.chunk.js.map",
-    "runtime-main.js": "/krean/static/js/runtime-main.5a8204b7.js",
-    "runtime-main.js.map": "/krean/static/js/runtime-main.5a8204b7.js.map",
-    "static/js/2.db4c4470.chunk.js": "/krean/static/js/2.db4c4470.chunk.js",
-    "static/js/2.db4c4470.chunk.js.map": "/krean/static/js/2.db4c4470.chunk.js.map",
-    "static/js/3.4c098d55.chunk.js": "/krean/static/js/3.4c098d55.chunk.js",
-    "static/js/3.4c098d55.chunk.js.map": "/krean/static/js/3.4c098d55.chunk.js.map",
+    "main.css": "/krean/static/css/main.77a42686.chunk.css",
+    "main.js": "/krean/static/js/main.76b57910.chunk.js",
+    "main.js.map": "/krean/static/js/main.76b57910.chunk.js.map",
+    "runtime-main.js": "/krean/static/js/runtime-main.04b45807.js",
+    "runtime-main.js.map": "/krean/static/js/runtime-main.04b45807.js.map",
+    "static/js/2.e73d18e5.chunk.js": "/krean/static/js/2.e73d18e5.chunk.js",
+    "static/js/2.e73d18e5.chunk.js.map": "/krean/static/js/2.e73d18e5.chunk.js.map",
+    "static/js/3.d1bb366b.chunk.js": "/krean/static/js/3.d1bb366b.chunk.js",
+    "static/js/3.d1bb366b.chunk.js.map": "/krean/static/js/3.d1bb366b.chunk.js.map",
     "index.html": "/krean/index.html",
-    "static/css/main.c4fdedfa.chunk.css.map": "/krean/static/css/main.c4fdedfa.chunk.css.map",
-    "static/js/2.db4c4470.chunk.js.LICENSE.txt": "/krean/static/js/2.db4c4470.chunk.js.LICENSE.txt",
+    "static/css/main.77a42686.chunk.css.map": "/krean/static/css/main.77a42686.chunk.css.map",
+    "static/js/2.e73d18e5.chunk.js.LICENSE.txt": "/krean/static/js/2.e73d18e5.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/krean/static/media/UniNeueHeavy.d61a3300.ttf",
     "static/media/bg.696169dd.png": "/krean/static/media/bg.696169dd.png",
     "static/media/bg.fdc21e07.svg": "/krean/static/media/bg.fdc21e07.svg",
@@ -28,9 +28,9 @@
     "static/media/twitter.fea09356.svg": "/krean/static/media/twitter.fea09356.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5a8204b7.js",
-    "static/js/2.db4c4470.chunk.js",
-    "static/css/main.c4fdedfa.chunk.css",
-    "static/js/main.4f22d7d2.chunk.js"
+    "static/js/runtime-main.04b45807.js",
+    "static/js/2.e73d18e5.chunk.js",
+    "static/css/main.77a42686.chunk.css",
+    "static/js/main.76b57910.chunk.js"
   ]
 }
