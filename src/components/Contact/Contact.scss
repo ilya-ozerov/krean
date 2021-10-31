@@ -3,10 +3,14 @@
         min-height: 70vh;
         background-color: #000000;
         display: grid;
-        grid-template-rows: 25% 50% 25%;
+        grid-template-rows: 200px 1fr 200px;
 
         align-items: center;
         justify-items: center;
+
+        @media (max-width: 767px) {
+            grid-template-rows: 100px 1fr 100px;
+        }
     }
 
     &__title {
