@@ -1,0 +1,51 @@
+.work-item {
+  position: relative;
+
+  &__info {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(98, 67, 111, 0.7);
+
+    padding: 50px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__year {
+  }
+}
+
+.details-open {
+  overflow: hidden;
+}
+
+.work-item__details {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  overflow-y: scroll;
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 30px;
+
+  @media (max-width: 767px) {
+    padding: 0px;
+  }
+}

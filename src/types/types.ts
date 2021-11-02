@@ -6,7 +6,7 @@ export type WorkType = {
         imageAlt: string;
     }
     images: Array<WorkImagesType>;
-    description: string;
+    description: JSX.Element[];
     date: {
         month: string;
         year: number;
