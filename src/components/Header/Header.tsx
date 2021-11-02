@@ -26,14 +26,6 @@ export const Header: React.FC<HeaderProps> = ({ className }) => {
     }
   }, [])
 
-  useEffect(() => {
-    if (isSticky) {
-      console.log("IS STICKY!")
-    } else {
-      console.log("IS NOT STICKY!")
-    }
-  }, [isSticky])
-
   return (
     <header className={isSticky ? `${className} header sticky-header` : `${className} header`}>
       <div className="header__body">
