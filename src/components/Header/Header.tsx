@@ -4,9 +4,16 @@ import { MobileMenu } from './MobileMenu/MobileMenu';
 
 type HeaderProps = {
   className: string;
+
+  refs: {
+    servicesRef: React.RefObject<HTMLDivElement>;
+    worksRef: React.RefObject<HTMLDivElement>;
+    referencesRef: React.RefObject<HTMLDivElement>;
+    contactRef: React.RefObject<HTMLDivElement>;
+  }
 }
 
-export const Header: React.FC<HeaderProps> = ({ className }) => {
+export const Header: React.FC<HeaderProps> = ({ className, refs }) => {
 
   const [isSticky, setIsSticky] = useState(false);
 
@@ -16,6 +23,10 @@ export const Header: React.FC<HeaderProps> = ({ className }) => {
     } else {
       setIsSticky(false)
     }
+  }
+
+  const scrollTo = (ref: React.RefObject<HTMLDivElement>) => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
   }
 
   useEffect(() => {
@@ -33,13 +44,13 @@ export const Header: React.FC<HeaderProps> = ({ className }) => {
           krea.
         </div>
         <ul className="header__list">
-          <li>Services</li>
-          <li>Works</li>
-          <li>References</li>
-          <li>Contact</li>
+          <li onClick={() => scrollTo(refs.servicesRef)}>Services</li>
+          <li onClick={() => scrollTo(refs.worksRef)}>Works</li>
+          <li onClick={() => scrollTo(refs.referencesRef)}>References</li>
+          <li onClick={() => scrollTo(refs.contactRef)}>Contact</li>
         </ul>
 
-        <MobileMenu className="header__mobile-menu" />
+        <MobileMenu className="header__mobile-menu" refs={refs} scrollTo={scrollTo} />
       </div>
 
     </header>

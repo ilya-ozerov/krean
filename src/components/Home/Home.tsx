@@ -5,7 +5,18 @@ import bg from "./../../assets/images/home/bg.png"
 import mouse from "./../../assets/images/home/mouse.svg"
 import { Header } from '../Header/Header';
 
-export const Home = () => {
+type HomeProps = {
+  refs: {
+    servicesRef: React.RefObject<HTMLDivElement>;
+    worksRef: React.RefObject<HTMLDivElement>;
+    referencesRef: React.RefObject<HTMLDivElement>;
+    contactRef: React.RefObject<HTMLDivElement>;
+  }
+}
+
+export const Home: React.FC<HomeProps> = (
+  { refs }
+) => {
   return (
     <section className="home">
 
@@ -16,7 +27,7 @@ export const Home = () => {
 
         <div className="home__body">
 
-          <Header className="home__header" />
+          <Header className="home__header" refs={refs} />
 
           <div className="home__title">
             <h1>Digital Marketing</h1>

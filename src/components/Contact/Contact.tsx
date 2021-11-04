@@ -1,9 +1,13 @@
 import React from 'react';
 import './Contact.scss';
 
-export const Contact = () => {
+type ContactProps = {
+  contactRef: React.RefObject<HTMLDivElement>;
+}
+
+export const Contact: React.FC<ContactProps> = ({ contactRef }) => {
   return (
-    <section className="contact">
+    <section ref={contactRef} className="contact">
       <div className="contact__content">
         <div className="contact__title title">
           <h2>Contact</h2>

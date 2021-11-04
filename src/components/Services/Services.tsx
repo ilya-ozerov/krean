@@ -5,9 +5,13 @@ import men from "./../../assets/images/services/men.svg";
 import compass from "./../../assets/images/services/compass.svg";
 import egg from "./../../assets/images/services/egg.svg";
 
-export const Services = () => {
+type ServicesProps = {
+  servicesRef: React.RefObject<HTMLDivElement>;
+}
+
+export const Services: React.FC<ServicesProps> = ({ servicesRef }) => {
   return (
-    <section className="services">
+    <section ref={servicesRef} className="services">
       <div className="services__content">
 
         <div className="services__title">

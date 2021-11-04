@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './App.scss';
 import { Contact } from './components/Contact/Contact';
 import { Footer } from './components/Footer/Footer';
@@ -8,18 +8,24 @@ import { Services } from './components/Services/Services';
 import { Works } from './components/Works/Works';
 
 export const App = () => {
+
+  const servicesRef = useRef<HTMLDivElement>(null);
+  const worksRef = useRef<HTMLDivElement>(null);
+  const referencesRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
+
   return (
     <div className="wrapper">
 
-      <Home />
+      <Home refs={{ servicesRef, worksRef, referencesRef, contactRef }} />
 
-      <Services />
+      <Services servicesRef={servicesRef} />
 
-      <Works />
+      <Works worksRef={worksRef} />
 
-      <References />
+      <References referencesRef={referencesRef} />
 
-      <Contact />
+      <Contact contactRef={contactRef} />
 
       <Footer />
 

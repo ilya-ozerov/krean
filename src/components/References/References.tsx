@@ -3,9 +3,15 @@ import './References.scss';
 import { Comments } from './Comments/Comments';
 import { Partners } from './Partners/Partners';
 
-export const References = () => {
+type ReferencesProps = {
+  referencesRef: React.RefObject<HTMLDivElement>;
+
+}
+
+export const References: React.FC<ReferencesProps> = (
+  { referencesRef }) => {
   return (
-    <section className="references">
+    <section ref={referencesRef} className="references">
 
       <div className="references__content">
         <div className="references__title title">

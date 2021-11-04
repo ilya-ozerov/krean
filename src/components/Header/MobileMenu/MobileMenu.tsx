@@ -15,9 +15,16 @@ const networks = [
 
 type MobileMenuProps = {
   className: string;
+  scrollTo: (ref: React.RefObject<HTMLDivElement>) => void;
+  refs: {
+    servicesRef: React.RefObject<HTMLDivElement>;
+    worksRef: React.RefObject<HTMLDivElement>;
+    referencesRef: React.RefObject<HTMLDivElement>;
+    contactRef: React.RefObject<HTMLDivElement>;
+  }
 }
 
-export const MobileMenu: React.FC<MobileMenuProps> = ({ className }) => {
+export const MobileMenu: React.FC<MobileMenuProps> = ({ className, scrollTo, refs }) => {
 
   const [isMobile, setIsModile] = useState(false);
 
@@ -40,10 +47,10 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ className }) => {
         isMobile &&
         <div className="mobile-menu__body">
           <ul className="mobile-menu__list">
-            <li>Services</li>
-            <li>Works</li>
-            <li>References</li>
-            <li>Contact</li>
+            <li onClick={() => scrollTo(refs.servicesRef)}>Services</li>
+            <li onClick={() => scrollTo(refs.worksRef)}>Works</li>
+            <li onClick={() => scrollTo(refs.referencesRef)}>References</li>
+            <li onClick={() => scrollTo(refs.contactRef)}>Contact</li>
           </ul>
           <div className="mobile-menu__networks">
             {networksList}

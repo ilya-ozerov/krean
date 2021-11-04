@@ -92,7 +92,11 @@ const works: WorkType[] = [
   },
 ]
 
-export const Works: React.FC = () => {
+type WorksProps = {
+  worksRef: React.RefObject<HTMLDivElement>;
+}
+
+export const Works: React.FC<WorksProps> = ({ worksRef }) => {
 
   const worksList = works.map((w, index) => {
 
@@ -106,7 +110,7 @@ export const Works: React.FC = () => {
   })
 
   return (
-    <section className="works">
+    <section ref={worksRef} className="works">
       <div className="works__content">
         <div className="works__title title">
           <h2>Works</h2>
@@ -116,7 +120,6 @@ export const Works: React.FC = () => {
           <div className="gallery__items">
             {worksList}
           </div>
-
         </div>
       </div>
 
