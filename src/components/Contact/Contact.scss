@@ -60,7 +60,6 @@
     }
 
     &__button {
-        flex: 0 0 20%;
         button {
             font-family: "Uni Neue";
             width: 240px;
@@ -70,6 +69,16 @@
             font-size: 29px;
             text-transform: uppercase;
             background-color: #202020;
+
+            transition-duration: 0.2s;
+
+            &:focus {
+                box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+            }
+
+            &:active {
+                transform: scale(0.9, 0.9);
+            }
         }
     }
 }
@@ -82,10 +91,16 @@
 
     background-color: rgba($color: #000000, $alpha: 0);
 
-    border-bottom: 3px solid #c6c6c6;
+    border-bottom: 2px solid #c6c6c6;
+
+    transition-duration: 0.5s;
 
     &::placeholder {
         color: #b2b2b2;
         font-size: 20px;
+    }
+
+    &:focus {
+        border-color: #80bdff;
     }
 }
