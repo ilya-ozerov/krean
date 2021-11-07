@@ -91,13 +91,15 @@
     }
 }
 
-.menu-transition-enter {
-    animation: show-menu 0.35s ease-in-out;
-}
-.menu-transition-enter-active {
-}
-.menu-transition-exit {
-    animation: show-menu 0.35s ease-in-out reverse;
-}
-.menu-transition-exit-active {
+.menu-transition {
+    &-enter {
+        animation: show-menu 0.35s ease-in-out;
+    }
+    &-enter-active {
+    }
+    &-exit {
+        animation: show-menu 0.35s ease-in-out reverse;
+    }
+    &-exit-active {
+    }
 }
