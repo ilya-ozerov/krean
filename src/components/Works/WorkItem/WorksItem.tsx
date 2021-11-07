@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { WorkType } from '../../../types/types';
 import './WorksItem.scss';
 import { Details } from './Details/Details';
+import { CSSTransition } from 'react-transition-group';
 
 type WorksItemType = {
   className: string;
@@ -45,8 +46,6 @@ export const WorksItem: React.FC<WorksItemType> = ({ work, className }) => {
 
     const clickHandler = (ev: MouseEvent) => {
 
-      console.log('handler')
-
       if (ev.target === itemInfoRef.current || ev.target === itemImageRef.current ||
         ev.target === itemYearRef.current || ev.target === itemTitleRef.current) {
         setIsDetails(true);
@@ -70,13 +69,12 @@ export const WorksItem: React.FC<WorksItemType> = ({ work, className }) => {
       onMouseLeave={onMouseLeave} className={className + ' work-item'}>
       <img ref={itemImageRef} src={work.preview.imageUrl} alt={work.preview.imageAlt} />
 
-      {
-        isFocus &&
+      <CSSTransition in={isFocus} timeout={300} classNames="item-info-transition" unmountOnExit>
         <div ref={itemInfoRef} className="work-item__info">
           <div ref={itemTitleRef} className="work-item__title">{title}</div>
           <div ref={itemYearRef} className="work-item__year">{work.date.year}</div>
         </div>
-      }
+      </CSSTransition>
 
       {isDetails &&
         <div ref={detailsBgRef} className="work-item__details">
