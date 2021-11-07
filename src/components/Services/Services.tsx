@@ -7,9 +7,10 @@ import egg from "./../../assets/images/services/egg.svg";
 
 type ServicesProps = {
   servicesRef: React.RefObject<HTMLDivElement>;
+  contactRef: React.RefObject<HTMLDivElement>;
 }
 
-export const Services: React.FC<ServicesProps> = ({ servicesRef }) => {
+export const Services: React.FC<ServicesProps> = ({ servicesRef, contactRef }) => {
   return (
     <section ref={servicesRef} className="services">
       <div className="services__content">
@@ -56,7 +57,7 @@ export const Services: React.FC<ServicesProps> = ({ servicesRef }) => {
         </div>
 
         <div className="services__button">
-          <button>GET IN TOUCH</button>
+          <button onClick={() => { contactRef.current?.scrollIntoView({ behavior: 'smooth' }) }}>GET IN TOUCH</button>
         </div>
       </div>
     </section>

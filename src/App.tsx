@@ -19,7 +19,7 @@ export const App = () => {
 
       <Home refs={{ servicesRef, worksRef, referencesRef, contactRef }} />
 
-      <Services servicesRef={servicesRef} />
+      <Services contactRef={contactRef} servicesRef={servicesRef} />
 
       <Works worksRef={worksRef} />
 
