@@ -7,13 +7,6 @@ import google from './../../../../assets/images/works/modal-plus.svg'
 import linkedin from './../../../../assets/images/works/modal-linkedin.svg'
 import { WorkType } from '../../../../types/types';
 
-// const networks = [
-//   { imageUrl: facebook, imageAlt: 'facebook' },
-//   { imageUrl: twitter, imageAlt: 'twitter' },
-//   { imageUrl: linkedin, imageAlt: 'linkedin' },
-//   { imageUrl: google, imageAlt: 'google' },
-// ]
-
 type DetailsProps = {
   work: WorkType;
   closeDetails: () => void;
