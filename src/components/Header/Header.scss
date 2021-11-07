@@ -36,6 +36,14 @@
             user-select: none;
             cursor: pointer;
 
+            transition-duration: 0.2s;
+            &:hover {
+                transform: scale(1.1, 1.1);
+            }
+            &:active {
+                transform: scale(0.9, 0.9);
+            }
+
             &:last-child {
                 margin-right: 0;
             }
