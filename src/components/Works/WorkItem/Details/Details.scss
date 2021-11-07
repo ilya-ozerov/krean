@@ -2,6 +2,9 @@
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
   background-color: #fff;
 
+  //overflow: hidden;
+  border-radius: 5px;
+
   width: 60vw;
 
   @media (max-width: 767px) {
@@ -58,6 +61,8 @@
   }
 
   &__image {
+    border-radius: 5px;
+    overflow: hidden;
     grid-area: image;
     position: relative;
     padding: 0px 0px 70% 0px;
