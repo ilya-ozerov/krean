@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
 import './MobileMenu.scss';
 
 import facebook from "./../../../assets/images/mobile-menu/mobile-menu-facebook.png";
@@ -48,7 +49,23 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ className, scrollTo, ref
         <div />
       </div>
 
-      {
+      <CSSTransition in={isMobile} timeout={300} classNames="menu-transition" unmountOnExit>
+        <div className="mobile-menu__body">
+          <ul className="mobile-menu__list">
+            <li onClick={() => liOnClick(refs.servicesRef)}>Services</li>
+            <li onClick={() => liOnClick(refs.worksRef)}>Works</li>
+            <li onClick={() => liOnClick(refs.referencesRef)}>References</li>
+            <li onClick={() => liOnClick(refs.contactRef)}>Contact</li>
+          </ul>
+          <div className="mobile-menu__networks">
+            {networksList}
+          </div>
+        </div>
+
+      </CSSTransition>
+
+
+      {/* {
         isMobile &&
         <div className="mobile-menu__body">
           <ul className="mobile-menu__list">
@@ -61,7 +78,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ className, scrollTo, ref
             {networksList}
           </div>
         </div>
-      }
+      } */}
     </div>
   );
 }

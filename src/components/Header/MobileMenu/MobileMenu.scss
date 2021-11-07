@@ -40,9 +40,13 @@
         right: 0;
         top: 60px;
 
+        height: 400px;
+
         background-color: #202020;
 
         padding: 15px 20px;
+
+        overflow: hidden;
     }
     &__list {
         margin-bottom: 30px;
@@ -76,4 +80,24 @@
             margin-right: 0;
         }
     }
+}
+
+@keyframes show-menu {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 400px;
+    }
+}
+
+.menu-transition-enter {
+    animation: show-menu 0.35s ease-in-out;
+}
+.menu-transition-enter-active {
+}
+.menu-transition-exit {
+    animation: show-menu 0.35s ease-in-out reverse;
+}
+.menu-transition-exit-active {
 }
