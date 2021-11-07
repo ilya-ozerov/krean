@@ -68,6 +68,7 @@ export const Partners: React.FC<PartnersType> = ({ className }) => {
             "spaceBetween": 10
           }
         }}
+        loop={true}
         autoplay={{
           "delay": 5000,
           "disableOnInteraction": true
