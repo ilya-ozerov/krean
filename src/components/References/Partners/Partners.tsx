@@ -32,11 +32,9 @@ export const Partners: React.FC<PartnersType> = ({ className }) => {
 
   const partnersList = partnersData.map((p, index) => {
     return (
-      <SwiperSlide key={index}>
-        <div className="partners__item">
-          <div className="partners__image">
-            <img src={p.imageUrl} alt={p.imageAlt} />
-          </div>
+      <SwiperSlide className="partners__item" key={index}>
+        <div className="partners__image">
+          <img src={p.imageUrl} alt={p.imageAlt} />
         </div>
       </SwiperSlide>
     );
@@ -69,10 +67,12 @@ export const Partners: React.FC<PartnersType> = ({ className }) => {
           }
         }}
         loop={true}
+        centeredSlides={true}
         autoplay={{
           "delay": 5000,
           "disableOnInteraction": true
-        }}>
+        }}
+      >
 
         {partnersList}
 

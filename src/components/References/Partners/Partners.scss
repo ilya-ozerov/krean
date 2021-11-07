@@ -7,6 +7,8 @@
     }
 
     &__item {
+        align-self: center;
+        justify-self: center;
     }
     &__image {
         display: grid;
