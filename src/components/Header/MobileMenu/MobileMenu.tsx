@@ -36,6 +36,11 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ className, scrollTo, ref
     );
   })
 
+  const liOnClick = (ref: React.RefObject<HTMLDivElement>) => {
+    setIsModile(false);
+    scrollTo(ref);
+  }
+
   return (
     <div className={`${className} mobile-menu`}>
 
@@ -47,10 +52,10 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ className, scrollTo, ref
         isMobile &&
         <div className="mobile-menu__body">
           <ul className="mobile-menu__list">
-            <li onClick={() => scrollTo(refs.servicesRef)}>Services</li>
-            <li onClick={() => scrollTo(refs.worksRef)}>Works</li>
-            <li onClick={() => scrollTo(refs.referencesRef)}>References</li>
-            <li onClick={() => scrollTo(refs.contactRef)}>Contact</li>
+            <li onClick={() => liOnClick(refs.servicesRef)}>Services</li>
+            <li onClick={() => liOnClick(refs.worksRef)}>Works</li>
+            <li onClick={() => liOnClick(refs.referencesRef)}>References</li>
+            <li onClick={() => liOnClick(refs.contactRef)}>Contact</li>
           </ul>
           <div className="mobile-menu__networks">
             {networksList}
