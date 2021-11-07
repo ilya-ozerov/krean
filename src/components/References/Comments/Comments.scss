@@ -29,6 +29,14 @@
         align-items: center;
         justify-items: center;
 
+        transition-duration: 0.2s;
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
+        &:active {
+            transform: scale(0.9, 0.9);
+        }
+
         @media (max-width: 767px) {
             display: none;
         }
@@ -38,6 +46,14 @@
         display: grid;
         align-items: center;
         justify-items: center;
+
+        transition-duration: 0.2s;
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
+        &:active {
+            transform: scale(0.9, 0.9);
+        }
 
         @media (max-width: 767px) {
             display: none;
@@ -118,15 +134,9 @@
 
         bottom: -40px;
         left: -30px;
-        // transform: translate(-50%, 0);
         img {
             opacity: 0.4;
             max-width: 100%;
         }
-
-        // @media (max-width: 767px) {
-        //     bottom: -20px;
-        //     left: -15px;
-        // }
     }
 }
