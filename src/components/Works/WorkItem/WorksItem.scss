@@ -28,6 +28,9 @@
 
 .details-open {
   overflow: hidden;
+  @media (min-width: 1024px) {
+    padding: 0 calc(17px - (100vw - 100%)) 0 0;
+  }
 }
 
 .work-item__details {

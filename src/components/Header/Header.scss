@@ -76,4 +76,8 @@
     height: 81px;
     top: 0;
     left: 0;
+
+    @media (min-width: 1024px) {
+        padding: 0 calc(20px - (100vw - 100%)) 0 0;
+    }
 }
