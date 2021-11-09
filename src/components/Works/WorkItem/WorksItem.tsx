@@ -76,12 +76,11 @@ export const WorksItem: React.FC<WorksItemType> = ({ work, className }) => {
         </div>
       </CSSTransition>
 
-      {isDetails &&
+      <CSSTransition in={isDetails} timeout={300} classNames="work-item-details-transition" unmountOnExit>
         <div ref={detailsBgRef} className="work-item__details">
-          <Details closeDetails={closeDetails} work={work} />
+          <Details isDetails={isDetails} closeDetails={closeDetails} work={work} />
         </div>
-      }
-
+      </CSSTransition>
     </div>
   );
 }
